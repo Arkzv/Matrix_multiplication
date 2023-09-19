@@ -21,7 +21,7 @@ Number of Threads:
 
 You can specify the number of threads to be used for computation in the multiply_matrices function.
 
-Example:
+## Example:
 
 ```python
 
