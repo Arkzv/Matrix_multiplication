@@ -13,11 +13,8 @@ This code snippet demonstrates parallel matrix multiplication in Python using th
 To compile the C code, follow replace **python3.10** with your specific Python version if necessary.
 
     bash
-
-    ```bash
     gcc -I/usr/include/python3.10 -shared -fPIC -O3 -o matrix_multiplication.so matrix_multiplication.c
 
-    ```
 ## Usage:
 
 The compiled library can be included and used in Python as usual.
