@@ -1,13 +1,14 @@
-#Parallel Matrix Multiplication with Python/C API
+# Parallel Matrix Multiplication with Python/C API
 
 This code snippet demonstrates parallel matrix multiplication in Python using the C API while bypassing the Global Interpreter Lock (GIL).
-##Overview:
+
+## Overview:
 
    * **Data Structure:** The data structure is defined on the Python side as a 2D list, and the returned type is also a standard 2D list. The results are in double precision.
 
    * **Parallelization:** The computations are parallelized across the CPUs.
 
-##Compilation (Linux):
+## Compilation (Linux):
 
 To compile the C code, follow replace **python3.10** with your specific Python version if necessary.
 
@@ -17,7 +18,7 @@ To compile the C code, follow replace **python3.10** with your specific Python v
     gcc -I/usr/include/python3.10 -shared -fPIC -O3 -o matrix_multiplication.so matrix_multiplication.c
 
     ```
-##Usage:
+## Usage:
 
 The compiled library can be included and used in Python as usual.
 Number of Threads:
