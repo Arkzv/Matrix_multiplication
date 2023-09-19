@@ -1,6 +1,6 @@
 # Parallel Matrix Multiplication with Python/C API
 
-This code snippet demonstrates parallel matrix multiplication in Python using the C API while bypassing the Global Interpreter Lock (GIL).
+This code demonstrates parallel matrix multiplication in Python using the C API, bypassing the Global Interpreter Lock (GIL). The data structure employed for matrix representation is a 2D list on the Python side, and the resulting type is also a standard 2D list, with double-precision values. The computation is performed in C, while the variables and Python object interaction remain in Python.
 
 ## Overview:
 
@@ -40,5 +40,8 @@ matrix2 = [[rd.random() for _ in range(d1)] for _ in range(d2)]
 num_threads = 6
 
 # Call the parallel_matrix_multiply function
+# The result is a standart 2D Python list 
 result = matrix_multiplication.multiply_matrices(matrix1, matrix2, num_threads)
 ```
+
+
